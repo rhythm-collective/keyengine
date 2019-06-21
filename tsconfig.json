@@ -2,6 +2,17 @@
     "compilerOptions": {
         "target": "es2019",
         "module": "commonjs",
-        "outDir": "build"
-    }
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "build",
+        "sourceMap": true
+    },
+    "include": [
+        "engine/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
