@@ -10,3 +10,4 @@
 - Initialize the node workspace `npm init -y`
 - Install node's typescript compiler: `npm install typescript`
 - Verify installation: `tsc --version`
+- Start active transpiling: `ctrl + shift + b`
