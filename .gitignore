@@ -101,4 +101,5 @@ typings/
 
 # End of https://www.gitignore.io/api/node,visualstudiocode
 
-build
+bin/*
+!bin/index.html
