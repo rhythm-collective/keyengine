@@ -9,9 +9,8 @@
 - Open the keyengine workspace.
 - Install the workspace recommended extensions.
 - Enter the workspace console with ```ctrl+` ```.
-- Initialize the node workspace `npm init -y`
-- Install node's typescript compiler: `npm install`
-- Start active transpiling: `ctrl + shift + b`
+- Initialize the node workspace `npm install`
+- Start active transpiling: `Ctrl + Shift + B`
 
 ## Set Up Debugging in Firefox
 
