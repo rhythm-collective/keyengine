@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rhythm-collective/keyengine#readme",
   "dependencies": {
+    "@types/spotify-web-playback-sdk": "^0.1.6",
     "local-web-server": "^3.0.3",
     "typescript": "^3.5.2"
   }
