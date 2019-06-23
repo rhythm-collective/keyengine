@@ -28,8 +28,8 @@
       "request": "launch",
       "sourceMaps": "client",
       "reAttach": true,
-      "url": "http://lvh.me:80/",
-      "webRoot": "${workspaceFolder}/examples",
+      "url": "http://lvh.me:80/examples",
+      "webRoot": "${workspaceFolder}",
     }
   ]
 }
