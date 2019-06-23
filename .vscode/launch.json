@@ -19,8 +19,17 @@
       "request": "launch",
       "sourceMaps": "client",
       "reAttach": true,
-      "url": "https://lvh.me:80/",
+      "url": "http://lvh.me:80/",
       "webRoot": "${workspaceFolder}/bin",
+    },
+    {
+      "name": "Launch Firefox Examples",
+      "type": "firefox",
+      "request": "launch",
+      "sourceMaps": "client",
+      "reAttach": true,
+      "url": "http://lvh.me:80/",
+      "webRoot": "${workspaceFolder}/examples",
     }
   ]
 }
