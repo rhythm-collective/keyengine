@@ -33,6 +33,11 @@
 - Place breakpoints as you wish.
 - Run Debug launch task.
 
+### Possible Errors
+
+- **SEC_ERROR_UNKNOWN_ISSUER**
+  - If you use a system level adblocker or a VPN, disable them. (Ex. Adguard)
+
 ## Testing the spotify example
 
 - Navigate to [WEb Playback SDK Quick Start](https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#)
