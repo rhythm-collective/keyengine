@@ -21,7 +21,7 @@
 
 > *Contribution Needed* Please fill out when configuring for chrome debugging.
 > [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-> Please match the stype of [Debugging in Firefox](#Debugging-in-Firefox)
+> Please match the style of [Debugging in Firefox](#Debugging-in-Firefox)
 
 ## Debugging in Browser
 
