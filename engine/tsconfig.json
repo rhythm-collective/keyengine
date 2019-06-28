@@ -4,15 +4,10 @@
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "outDir": "bin",
+    "outDir": "../bin/engine/",
     "sourceMap": true,
   },
   "include": [
-    "engine/**/*",
-    "examples/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.ts"
+    "./**/*",
   ]
 }
