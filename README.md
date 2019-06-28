@@ -12,12 +12,17 @@
 - Initialize the node workspace `npm install`
 - Start active transpiling: `Ctrl + Shift + B`
 
+## To create new examples or compiling in Typescript
+- Write your .ts files under the `engine/` or `example/` directories.
+- The folder and file structure you create will be mimicked in the `bin/` directory.
+- There is no compilation level difference between files in `engine/` or `examples/`.
+
 ## Set Up Debugging in Firefox
 
 - Install [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-firefox-debug)
 - Launch the debugger with 'Launch Firefox' debug launch (see launch.json).
 
-## Set Up Debuggin in Chrome
+## Set Up Debugging in Chrome
 
 > *Contribution Needed* Please fill out when configuring for chrome debugging.
 > [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
@@ -38,13 +43,17 @@
 - **SEC_ERROR_UNKNOWN_ISSUER**
   - If you use a system level adblocker or a VPN, disable them. (Ex. Adguard)
 
+- **Loading failed for the \<script> with source *[url]***
+  - If you use a system level adblocker or a VPN, disable them. (Ex. Adguard)
+
 ## Testing the spotify example
 
 - Navigate to [WEb Playback SDK Quick Start](https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#)
 - Generate your own access token. (It will expire in an hour.)
 - Paste it into the quotes at `const token = '';` on line 13.
-- The webserver *may* be restarted with `./node_modules/.bin/ws -p 80 -d examples --hostname lvh.me`
+- The webserver should be restarted with `./node_modules/.bin/ws -p 80 --hostname lvh.me`
 - Run the Launch Firefox Examples project.
+- Navidate to `examples/spotify`.
 - If it worked you will see: `Ready with Device ID ###...`
 - If you get the error:
 
@@ -59,3 +68,10 @@
 
 - Open a Spotify instance, and look for `Web Playback SDK Quick Start Player` in the device menu. Select it and play a song.
 - If you hear nothing in the browser, but you see all of the console output related to it, check that the audio auto play permissions are enabled. (In the security shield box.)
+
+## Testing the drawlook example
+
+- The webserver should be started with `./node_modules/.bin/ws -p 80 --hostname lvh.me`
+- Run the Launch Firefox Examples project.
+- Navidate to `examples/draw`.
+- If it worked you will see an animating line running up at canvas.

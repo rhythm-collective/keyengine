@@ -18,8 +18,12 @@
   },
   "homepage": "https://github.com/rhythm-collective/keyengine#readme",
   "dependencies": {
+    "@types/p5": "^0.7.2",
     "@types/spotify-web-playback-sdk": "^0.1.6",
+    "@types/stats": "^0.16.30",
     "local-web-server": "^3.0.3",
+    "p5": "^0.8.0",
+    "stats.js": "^0.17.0",
     "typescript": "^3.5.2"
   }
 }

@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
     "target": "es2019",
-    "module": "commonjs",
     "noImplicitAny": true,
     "removeComments": true,
     "preserveConstEnums": true,
     "outDir": "bin",
-    "sourceMap": true
+    "sourceMap": true,
   },
   "include": [
-    "engine/**/*"
+    "engine/**/*",
+    "examples/**/*"
   ],
   "exclude": [
     "node_modules",
