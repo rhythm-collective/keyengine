@@ -13,9 +13,11 @@
 - Start active transpiling: `Ctrl + Shift + B`
 
 ## To create new examples or compiling in Typescript
+
 - Write your .ts files under the `engine/` or `example/` directories.
 - The folder and file structure you create will be mimicked in the `bin/` directory.
 - There is no compilation level difference between files in `engine/` or `examples/`.
+- The `index.html` should not live in the `bin/` directories, and should reference compiled code. See existing examples.
 
 ## Set Up Debugging in Firefox
 
@@ -48,7 +50,7 @@
 
 ## Testing the spotify example
 
-- Navigate to [WEb Playback SDK Quick Start](https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#)
+- Navigate to [Web Playback SDK Quick Start](https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#)
 - Generate your own access token. (It will expire in an hour.)
 - Paste it into the quotes at `const token = '';` on line 13.
 - The webserver should be restarted with `./node_modules/.bin/ws -p 80 --hostname lvh.me`
