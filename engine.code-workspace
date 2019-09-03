@@ -1,8 +1,21 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {},
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "eslint.validate": [
+      "javascriptreact",
+      {
+        "language": "typescript",
+        "autoFix": true
+      },
+      {
+        "language": "typescriptreact",
+        "autoFix": true
+      }
+    ]
+  }
 }

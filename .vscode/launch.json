@@ -4,32 +4,25 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
+
     {
-      "type": "node",
+      "name": "Chrome",
+      "type": "chrome",
       "request": "launch",
-      "name": "Debug",
-      "program": "${workspaceFolder}/engine/helloworld.ts",
-      "outFiles": [
-        "${workspaceFolder}/bin/**/*.js"
-      ]
+      "sourceMaps": true,
+      "url": "http://lvh.me:3000/",
+      "webRoot": "${workspaceFolder}/src",
+      "preLaunchTask": "npm: start"
     },
     {
-      "name": "Launch Firefox",
+      "name": "Firefox",
       "type": "firefox",
       "request": "launch",
       "sourceMaps": "client",
       "reAttach": true,
-      "url": "http://lvh.me:80/",
-      "webRoot": "${workspaceFolder}/bin",
-    },
-    {
-      "name": "Launch Firefox Examples",
-      "type": "firefox",
-      "request": "launch",
-      "sourceMaps": "client",
-      "reAttach": true,
-      "url": "http://lvh.me:80/examples",
-      "webRoot": "${workspaceFolder}",
+      "url": "http://lvh.me:3000/",
+      "webRoot": "${workspaceFolder}/src",
+      "preLaunchTask": "npm: start"
     }
   ]
 }

@@ -1,29 +1,51 @@
 {
-  "name": "keyengine",
-  "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/rhythm-collective/keyengine.svg?branch=master)](https://travis-ci.org/rhythm-collective/keyengine) [![Coverage Status](https://coveralls.io/repos/github/rhythm-collective/keyengine/badge.svg?branch=master)](https://coveralls.io/github/rhythm-collective/keyengine?branch=master) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rhythm-collective/keyengine.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rhythm-collective/keyengine/issues"
-  },
-  "homepage": "https://github.com/rhythm-collective/keyengine#readme",
+  "name": "engine",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@types/p5": "^0.7.2",
-    "@types/spotify-web-playback-sdk": "^0.1.6",
-    "@types/stats": "^0.16.30",
-    "local-web-server": "^3.0.3",
-    "p5": "^0.8.0",
-    "stats.js": "^0.17.0",
-    "typescript": "^3.5.2"
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.3",
+    "@types/p5": "^0.9.0",
+    "@types/ramda": "0.26.21",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "fp-ts": "^2.0.5",
+    "p5": "^0.9.0",
+    "ramda": "0.26.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "ts-toolbelt": "3.8.63",
+    "typescript": "3.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier": "^1.18.2"
   }
 }

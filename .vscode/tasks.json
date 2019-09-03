@@ -1,28 +1,16 @@
 {
-  // See https://go.microsoft.com/fwlink/?LinkId=733558
-  // for the documentation about the tasks.json format
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Watch Engine & Compile",
-      "type": "shell",
-      "command": "./node_modules/.bin/tsc -w -p ./engine ",
-      "group": {
-        "kind": "build",
-        "isDefault": true
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Watch & Compile",
+        "type": "shell",
+        "command": "node_modules/.bin/tsc -w -p .",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
       }
-    },
-    {
-      "label": "Watch Examples & Compile",
-      "type": "shell",
-      "command": "./node_modules/.bin/tsc -w -p ./examples",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": [
-        "$tsc"
-      ]
-    }
-  ]
-}
+    ]
+  }
