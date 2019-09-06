@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import PropTypes from "prop-types";
 import "./game.css";
+import Button from "react-bootstrap/Button";
 
 const FileInput: React.FC<FileInputProps> = ({
   acceptedTypes = "*",
@@ -8,16 +9,25 @@ const FileInput: React.FC<FileInputProps> = ({
   id,
   onFilesUpdated
 }) => {
+  const inputFile = useRef(null);
+  const onButtonClick = (): void => {
+    inputFile.current.click();
+  };
+
   return (
     <div className="FileInput">
-      <label htmlFor={id}>{label}</label>
       <input
         type="file"
         id={id}
         name={id}
+        ref={inputFile}
         accept={acceptedTypes}
         onChange={onFilesUpdated}
-      ></input>
+        hidden
+      />
+      <Button variant="secondary" onClick={onButtonClick}>
+        Browse
+      </Button>
     </div>
   );
 };
