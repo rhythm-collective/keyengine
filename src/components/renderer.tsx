@@ -1,23 +1,32 @@
 import p5 from "p5";
 import React from "react";
 
-const radius = 200;
-const s = function(sketch: p5): void {
+const s = (sketch: p5): void => {
   sketch.setup = (): void => {
     const canvas = sketch.createCanvas(710, 400, "webgl");
     canvas.parent("game");
   };
 
   sketch.draw = (): void => {
-    sketch.noStroke();
-    sketch.background(0);
-    const dirY = (sketch.mouseY / sketch.height - 0.5) * 4;
-    const dirX = (sketch.mouseX / sketch.width - 0.5) * 4;
-    sketch.directionalLight(204, 204, 204, dirX, dirY, 1);
-    sketch.translate(-1.5 * radius, 0, 0);
-    sketch.sphere(radius);
-    sketch.translate(3 * radius, 0, 0);
-    sketch.sphere(radius);
+    const frameCount: number = sketch.frameCount;
+    sketch.background(250);
+    sketch.rotateY(frameCount * 0.01);
+
+    for (let j = 0; j < 5; j++) {
+      sketch.push();
+      for (let i = 0; i < 80; i++) {
+        sketch.translate(
+          sketch.sin(frameCount * 0.001 + j) * 100,
+          sketch.sin(frameCount * 0.001 + j) * 100,
+          i * 0.1
+        );
+        sketch.rotateZ(frameCount * 0.002);
+        sketch.push();
+        sketch.sphere(8, 6, 4);
+        sketch.pop();
+      }
+      sketch.pop();
+    }
   };
 };
 
